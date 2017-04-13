@@ -1,0 +1,16 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+		<div class="margin-bottom-2x pageHeader">
+			<button id="openAppMenu"
+				class="floatLeft roundedAll">
+				<span class="fa fa-bars fa-2x"></span>
+			</button>
+			<span class="pageTitle">
+				RogueFlash - <c:out value="${PageBean.title}" />
+			</span>
+			<button id="openActionMenu"
+				class="floatRight roundedAll">
+				<span class="fa fa-ellipsis-h fa-2x"></span>
+			</button>
+			<div class="clearfix"></div>
+		</div>

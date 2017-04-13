@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence
+		xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+		version="2.1">
+		
+	<persistence-unit
+			name="RogueFlash"
+			transaction-type="RESOURCE_LOCAL">
+			<!-- transaction-type="JTA" -->
+			
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		
+		<!-- 
+		<non-jta-data-source>java:comp/env/jdbc/RogueFlashDb</non-jta-data-source>
+		<jta-data-source>java:comp/env/jdbc/RogueFlashDb</jta-data-source>
+		-->
+		
+		<class>app.model.entities.Card</class>
+		<class>app.model.entities.CardInstance</class>
+		<class>app.model.entities.CardPlan</class>
+		<class>app.model.entities.CardReview</class>
+		<class>app.model.entities.Deck</class>
+		
+		<properties>
+			<property name="hibernate.archive.autodetection" value="false" />
+			
+			<property name="hibernate.globally_quoted_identifiers" value="true" />
+			
+			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost/RogueFlash" />
+			<property name="hibernate.connection.username" value="admin" />
+			<property name="hibernate.connection.password" value="admin" />
+			
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+			
+			<!-- 
+			<property name="hibernate.enhancer.enableLazyInitialization" value="true" />
+			<property name="hibernate.jdbc.batch_size" value="10" />
+			<property name="hibernate.jdbc.use_streams_for_binary" value="false" />
+			<property name="hibernate.jmx.enabled" value="false" />
+			<property name="hibernate.order_updates" value="true" />
+			-->
+			
+			<property name="hibernate.cache.use_second_level_cache" value="false" />
+			<property name="hibernate.flushMode" value="FLUSH_MANUAL" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="none" />
+			<property name="hibernate.jdbc.log.warnings" value="true" />
+			<property name="hibernate.query.jpaql_strict_compliance" value="true" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.use_sql_comments" value="false" />
+			
+		</properties>
+		
+	</persistence-unit>
+</persistence>

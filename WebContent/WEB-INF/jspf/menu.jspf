@@ -1,0 +1,61 @@
+
+	<div id="appMenu"
+		class="navigator navigatorToTheLeft">
+		<div>
+			<button id="closeAppMenu"
+				class="floatRight roundedAll">
+				<span class="fa fa-close"></span>
+			</button>
+			<div class="clearfix"></div>
+		</div>
+		<div class="navigatorSeparator"></div>
+		<button id="newDeck"
+			class="navigatorButton roundedAll">
+			<span>New Deck</span>
+		</button>
+		<button id="editDeck"
+			class="navigatorButton roundedAll">
+			<span>Edit Deck</span>
+		</button>
+		<button id="decks"
+			class="navigatorButton roundedAll">
+			<span>Decks</span>
+		</button>
+		<div class="navigatorSeparator"></div>
+		<button id="newCard"
+			class="navigatorButton roundedAll">
+			<span>New Card</span>
+		</button>
+		<button id="editCard"
+			class="navigatorButton roundedAll">
+			<span>Edit Card</span>
+		</button>
+		<button id="cards"
+			class="navigatorButton roundedAll">
+			<span>Cards</span>
+		</button>
+		<button id="review"
+			class="navigatorButton roundedAll">
+			<span>Review</span>
+		</button>
+	</div>
+	
+	<div id="actionMenu"
+		class="navigator navigatorToTheRight">
+		<div>
+			<button id="closeActionMenu"
+				class="floatRight roundedAll">
+				<span class="fa fa-close"></span>
+			</button>
+			<div class="clearfix"></div>
+		</div>
+		<div class="navigatorSeparator"></div>
+		<button id="delete"
+			class="navigatorButton roundedAll">
+			<span>Delete</span>
+		</button>
+		<button id="tag"
+			class="navigatorButton roundedAll">
+			<span>Tag</span>
+		</button>
+	</div>
